@@ -1,0 +1,40 @@
+(tn_compiler) aninda@LPT-R-QIG-ANINDA:/mnt/d/PhD_IMDEA/All_Projects/tn_compiler$ uv run train_mps1_M4.py 
+
+Device: cuda
+Loading : output/dataset_M4_D2_t6000.npz
+  X   shape : (5000, 16)   ‖x‖ range [1.0000, 1.0000]
+  Phi shape : (5000, 16)  (M applied, same norms)
+  M   shape : (16, 16)
+  Phi sanity check  max|Phi - M@X| = 2.83e-16  ✓
+
+=================================================================
+  Training  Ψ^PS  |  NFL loss  |  CosineAnnealing Adam
+=================================================================
+  dim=16  n_qubits=4  t=5000  epochs=1000  lr=0.001
+-----------------------------------------------------------------
+  Backend      : PyTorch on cuda
+  GPU          : NVIDIA GeForce RTX 4060 Laptop GPU
+  VRAM         : 8.6 GB
+  ep     0/1000  loss=2.045634  F̄=0.062831  [2.3s]
+  ep    50/1000  loss=1.718517  F̄=0.081463  [2.9s]
+  ep   100/1000  loss=1.404733  F̄=0.146133  [3.0s]
+  ep   150/1000  loss=1.121599  F̄=0.243546  [3.2s]
+  ep   200/1000  loss=0.875347  F̄=0.359042  [3.4s]
+  ep   250/1000  loss=0.670912  F̄=0.477265  [3.6s]
+  ep   300/1000  loss=0.508003  F̄=0.586517  [3.7s]
+  ep   350/1000  loss=0.380423  F̄=0.681120  [3.9s]
+  ep   400/1000  loss=0.285884  F̄=0.755489  [4.1s]
+  ep   450/1000  loss=0.220805  F̄=0.808403  [4.3s]
+  ep   500/1000  loss=0.177311  F̄=0.844508  [4.4s]
+  ep   550/1000  loss=0.148026  F̄=0.869175  [4.6s]
+  ep   600/1000  loss=0.127988  F̄=0.886234  [4.8s]
+  ep   650/1000  loss=0.114124  F̄=0.898127  [5.0s]
+  ep   700/1000  loss=0.104522  F̄=0.906411  [5.2s]
+  ep   750/1000  loss=0.097953  F̄=0.912101  [5.3s]
+  ep   800/1000  loss=0.093594  F̄=0.915887  [5.5s]
+  ep   850/1000  loss=0.090860  F̄=0.918266  [5.7s]
+  ep   900/1000  loss=0.089295  F̄=0.919629  [5.9s]
+  ep   950/1000  loss=0.088505  F̄=0.920319  [6.1s]
+  ep   999/1000  loss=0.088113  F̄=0.920660  [6.3s]
+
+  W unitarity check : max|W†W - I| = 2.01e-06

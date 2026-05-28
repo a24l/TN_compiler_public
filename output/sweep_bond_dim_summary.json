@@ -1,0 +1,30 @@
+[
+  {
+    "D": 1,
+    "n_params": 171,
+    "under_256": true,
+    "fbar_train": 0.301371,
+    "fbar_test": 0.30966
+  },
+  {
+    "D": 2,
+    "n_params": 306,
+    "under_256": false,
+    "fbar_train": 0.386575,
+    "fbar_test": 0.393548
+  },
+  {
+    "D": 3,
+    "n_params": 441,
+    "under_256": false,
+    "fbar_train": 0.491864,
+    "fbar_test": 0.49355
+  },
+  {
+    "D": 4,
+    "n_params": 576,
+    "under_256": false,
+    "fbar_train": 0.542556,
+    "fbar_test": 0.537748
+  }
+]
